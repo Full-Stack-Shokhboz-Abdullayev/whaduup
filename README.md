@@ -10,7 +10,7 @@ If you keen to run locally then follow the steps below.
 First of all set up .env variables as stated in the example file `/server/.env`;
 
 Then run command:
-`cd server && npm run build && npm start`
+```cd server && npm run build && npm start```
 
 ### 2 - Running Client
 Create a file called `.env` or `.env.local` inside `/client` directory and then paste these environment variables (you must set the server port after localhost):
