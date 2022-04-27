@@ -1,0 +1,6 @@
+node_modules
+dist
+# exclude everything
+src/uploads/*
+!src/uploads/.gitkeep
+!src/uploads/dumb.ts

@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #131c21;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #394045;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  aside {
+    width: 40rem;
+  }
+}
+
+@layer components {
+  /* brand-green */
+  .green-text {
+    @apply text-brand-green;
+  }
+  .green-bg {
+    @apply bg-brand-green;
+  }
+
+  /* brand-grey-1 */
+  .main-footer {
+    @apply bg-brand-grey-1;
+  }
+
+  /* brand-mud-2 */
+  .search-bar,
+  .message {
+    @apply bg-brand-mud-2;
+  }
+
+  /* brand-mud-3 */
+  .search-bar input,
+  .message-active {
+    @apply bg-brand-mud-3;
+  }
+  /* brand-mud-4 */
+  .single-message {
+    @apply bg-brand-mud-4;
+  }
+
+  /* brand-blue-green */
+  .single-message.user {
+    @apply bg-brand-blue-green;
+  }
+  .incoming-svg {
+    @apply text-brand-mud-4 -scale-x-100;
+  }
+  /* brand-blue-green */
+  .user-svg {
+    @apply text-brand-blue-green;
+  }
+
+  .main-header,
+  .aside-header {
+    @apply bg-brand-mud-1;
+  }
+
+  /* brand-grey-2 */
+  .message-input {
+    @apply bg-brand-grey-2;
+  }
+  .bg-whatsapp {
+    @apply bg-brand-blue-grey top-0;
+    background-image: url(./whatsapp-bg.png);
+    background-size: inherit;
+    background-position: top;
+    background-repeat: repeat;
+  }
+
+  .users-list {
+    @apply bg-gray-200 overflow-y-auto 
+    fixed h-full border-r border-gray-800 
+    sm:!translate-x-0 sm:relative sm:block transition-transform duration-500 
+    sm:w-[40rem] sm:transition-none w-full;
+  }
+
+  /* brand-blue-grey-transparent */
+  .main-messages {
+    @apply bg-brand-blue-grey-transparent;
+    min-height: calc(100% - (68px + 72px));
+  }
+  .aside-messages {
+    @apply search-bar min-h-[calc(100%-124px)];
+  }
+}
